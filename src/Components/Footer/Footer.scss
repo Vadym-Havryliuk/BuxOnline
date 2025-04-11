@@ -1,0 +1,87 @@
+//імпорт змінних з файла App.scss
+@use "../../App.scss" as styles;
+
+footer {
+  background-color: styles.$lightBlue;
+  width: 100%;
+  color: styles.$white;
+
+  .footer-container {
+    padding-top: 50px;
+
+    .footer-wrapper-up {
+      display: flex;
+      justify-content: space-around;
+
+      .footer-sidebar-1-logo {
+        display: flex;
+        align-items: center;
+        margin-top: -5px;
+        margin-bottom: 5px;
+
+        .footer-logo-name {
+          font-size: 24px;
+          color: styles.$white;
+          padding-left: 15px;
+        }
+      }
+
+      .social-media {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        gap: 20px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        .contact-icon {
+          transition: 0.5s ease-out;
+          &:hover {
+            fill: black;
+          }
+        }
+      }
+      h3 {
+        padding-bottom: 15px;
+      }
+      a {
+        color: styles.$white;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      .contacts-footer {
+        display: flex;
+
+        .contacts-email,
+        .contacts-tel {
+          display: inline-block;
+        }
+      }
+    }
+    .footer-wrapper-down {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-left: 60px;
+      padding-bottom: 50px;
+      font-size: 14px;
+
+      .text-right {
+        margin-right: 60px;
+        font-size: 14px;
+      }
+    }
+
+    .footer-text {
+      color: styles.$white;
+      font-size: 12px;
+      display: block;
+      text-decoration: none;
+      line-height: 25px;
+    }
+  }
+}

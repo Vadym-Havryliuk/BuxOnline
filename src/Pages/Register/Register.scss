@@ -1,0 +1,142 @@
+@use "../../App.scss" as styles;
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    text-align: center;
+    padding: 50px 0px;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        border: 1px solid styles.$lightBlue;
+        border-radius: 16px;
+        padding: 64px;
+        color: styles.$blackForText;
+        min-width: 620px;
+        width: max-content;
+        max-width:90%;
+        
+
+        a {
+            text-decoration: none;
+            color: styles.$lightBlue;
+            color: styles.$lightBlue;
+            cursor: pointer;
+
+            
+        }
+
+        p {
+            font-size: 20px;
+
+            &:nth-of-type(1) {
+                padding: 25px 0px 15px 0px;
+            }
+
+            &:nth-of-type(2) {
+                padding: 25px 0px;
+            }
+
+            &:nth-last-of-type(1) {
+                font-size: 16px;
+
+
+
+
+
+            }
+        }
+
+        .media-register {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 486px;
+            height: 48px;
+            margin: 20px 0px;
+
+            a {
+                height: 43px;
+                width: 146px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                text-decoration: none;
+                color: styles.$blackForText;
+                border: 1px solid styles.$lightBlue;
+                border-radius: 12px;
+                font-size: 20px;
+            }
+
+        }
+
+
+        button {
+            width: 100%;
+            margin: 20px 0px 20px 0px;
+        }
+
+
+
+        .agree {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: auto;
+            text-align: left;
+
+      
+        }
+
+    }
+}
+
+
+
+    .onboard-box {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        h1 {
+            padding-left: 50px;
+            color: styles.$blackForText;
+            padding-bottom: 50px;
+        }
+
+        .cards-wrapper {
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            gap: 50px;
+
+            .card {
+                width: 373px;
+                height: 375px;
+                border-radius: 16px;
+                border: 1px solid styles.$grayforBorder;
+
+                img {
+                    width: 100%;
+                }
+                h3{
+                    padding: 20px 0px;
+                }
+            }
+        }
+        button{
+            position: absolute;
+            margin-top: 50px;
+            right: 50px;
+        }
+
+    }

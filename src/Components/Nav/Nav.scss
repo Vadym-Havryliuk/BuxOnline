@@ -1,0 +1,99 @@
+//імпорт змінних з файла App.scss
+@use "../../App.scss" as styles;
+
+nav {
+  padding: 25px 0px;
+
+  // height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+  }
+
+  .nav-block-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 125px;
+
+    .name-logo {
+      color: styles.$lightBlue;
+      font-size: 18px;
+      &:hover {
+        text-decoration: underline solid currentColor;
+      }
+      // text-shadow: 1px 1px 1px rgb(33, 57, 180);
+    }
+  }
+
+  .nav-block-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    white-space: nowrap;
+    .button-language-change {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      width: 60px;
+      background: none;
+      border: none;
+      display: flex;
+      font-size: 16px;
+      cursor: pointer;
+
+      svg {
+        height: 13.5px;
+        width: 18px;
+      }
+      h5 {
+        font-weight: 400;
+      }
+      .language-change-dropdown {
+        position: absolute;
+        top: 100%;
+        opacity: 0;
+        transform: translateY(-5px);
+        transition: 0.5s;
+        pointer-events: none;
+
+        &.active {
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: all;
+        }
+        .dropdown-option {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 40px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    h5 {
+      color: styles.$blackForText;
+      &:hover {
+        text-decoration: underline solid currentColor;
+      }
+    }
+
+    .nav-entrance {
+      color: styles.$lightBlue;
+      background-color: styles.$white;
+      border: 2px solid styles.$lightBlue;
+      border-radius: 20px;
+      font-size: 14px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline solid currentColor;
+      }
+    }
+  }
+}
